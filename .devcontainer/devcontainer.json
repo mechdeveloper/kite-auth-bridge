@@ -1,0 +1,15 @@
+{
+	"name": "C# (.NET)",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:2-10.0-noble",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"openai.chatgpt",
+				"ms-azuretools.vscode-containers"
+			]
+		}
+	},
+	"forwardPorts": [ 5196 ],
+	"postCreateCommand": "cd src/KiteAuthBridge && dotnet restore"
+}
